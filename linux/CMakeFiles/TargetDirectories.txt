@@ -1,0 +1,2 @@
+/root/1xiu/bailingOCR2.0/linux/CMakeFiles/bailing.dir
+/root/1xiu/bailingOCR2.0/linux/CMakeFiles/BailingOCRJni.dir
