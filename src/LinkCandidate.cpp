@@ -1,7 +1,7 @@
 #include"LinkCandidate.h"
 #include<stdio.h>
 
-std::vector<Rect> LinkCandidate::run(std::vector<Candidate>& candidateStore)
+std::vector<Rect> LinkCandidate::run(std::vector<Candidate>& candidateStore, int &max_y,int &min_y, int&max_x, int&min_x )
 {
 	std::vector< std::vector<bool> > relation;
 
@@ -9,10 +9,10 @@ std::vector<Rect> LinkCandidate::run(std::vector<Candidate>& candidateStore)
 	//this->candidateStore = candidateStore;
 	relation = std::vector< std::vector<bool> >(3000,std::vector<bool>(3000,true));
 	link(candidateStore, relation);
-	finalresult(candidateStore, relation, cgts);
+	finalresult(candidateStore, relation, cgts, max_y, min_y, max_x, min_x);
 	return cgts;
 }
-void LinkCandidate::finalresult(std::vector<Candidate> &candidateStore, std::vector< std::vector<bool> > &relation, vector<cv::Rect> &cgts)
+void LinkCandidate::finalresult(std::vector<Candidate> &candidateStore, std::vector< std::vector<bool> > &relation, vector<cv::Rect> &cgts, int &max_y,int &min_y, int&max_x, int&min_x)
 {
 	Iqueue* Iq;
 	Iq = new Iqueue;
@@ -68,10 +68,6 @@ void LinkCandidate::finalresult(std::vector<Candidate> &candidateStore, std::vec
 		store[candidateStore[i].chuan].push_back(i);
 	}
 
-	int max_y;
-	int min_y;
-	int max_x;
-	int min_x;
 	max_y = 0;
 	min_y = 65535;
 
@@ -81,7 +77,7 @@ void LinkCandidate::finalresult(std::vector<Candidate> &candidateStore, std::vec
 	
 	for(int i = 1;i< index;i++)
 	{
-		if(store[i].size() <=4)
+		if(store[i].size() <=3)
 			continue;
 
 		vector<cv::Point> PointV;

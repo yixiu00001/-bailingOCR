@@ -13,9 +13,9 @@ public:
 		//this->Iq = new Iqueue;
 		//relation = std::vector< std::vector<bool> >(3000,std::vector<bool>(3000,true));
 	}
-	std:: vector<Rect> run(std::vector<Candidate>& allCandidate);
+	std:: vector<Rect> run(std::vector<Candidate>& allCandidate, int &max_y,int &min_y, int&max_x, int&min_x);
 	void findPairRegion(int i, int j, std::vector<Candidate> &candidateStore,std::vector< std::vector<bool> > &relation);
-	void finalresult( std::vector<Candidate> &candidateStore,std::vector< std::vector<bool> > &relation, vector<cv::Rect> &cgts);
+	void finalresult( std::vector<Candidate> &candidateStore,std::vector< std::vector<bool> > &relation, vector<cv::Rect> &cgtsi, int &max_y,int &min_y, int&max_x, int &min_x);
 	void link( std::vector<Candidate> &candidateStore,std::vector< std::vector<bool> > &relation);
 	//存储连接起来的区域的上下左右边界
 	//int max_y;

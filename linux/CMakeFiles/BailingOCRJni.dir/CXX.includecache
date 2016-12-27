@@ -64,53 +64,53 @@ jni_md.h
 
 ../include/jni_md.h
 
-/root/1xiu/bailingOCR2.0/include/BailingJni.h
+/root/1xiu/github2/bailingOCR2.0/include/BailingJni.h
 jni.h
 -
 MSERProcess.h
-/root/1xiu/bailingOCR2.0/include/MSERProcess.h
+/root/1xiu/github2/bailingOCR2.0/include/MSERProcess.h
 
-/root/1xiu/bailingOCR2.0/include/Candidate.h
+/root/1xiu/github2/bailingOCR2.0/include/Candidate.h
 
-/root/1xiu/bailingOCR2.0/include/DealCorrect.h
+/root/1xiu/github2/bailingOCR2.0/include/DealCorrect.h
 head.h
-/root/1xiu/bailingOCR2.0/include/head.h
+/root/1xiu/github2/bailingOCR2.0/include/head.h
 
-/root/1xiu/bailingOCR2.0/include/GetCandidate.h
+/root/1xiu/github2/bailingOCR2.0/include/GetCandidate.h
 head.h
-/root/1xiu/bailingOCR2.0/include/head.h
+/root/1xiu/github2/bailingOCR2.0/include/head.h
 Candidate.h
-/root/1xiu/bailingOCR2.0/include/Candidate.h
+/root/1xiu/github2/bailingOCR2.0/include/Candidate.h
 math.h
 -
 
-/root/1xiu/bailingOCR2.0/include/LinkCandidate.h
+/root/1xiu/github2/bailingOCR2.0/include/LinkCandidate.h
 Candidate.h
-/root/1xiu/bailingOCR2.0/include/Candidate.h
+/root/1xiu/github2/bailingOCR2.0/include/Candidate.h
 LinkCandidateUtil.h
-/root/1xiu/bailingOCR2.0/include/LinkCandidateUtil.h
+/root/1xiu/github2/bailingOCR2.0/include/LinkCandidateUtil.h
 head.h
-/root/1xiu/bailingOCR2.0/include/head.h
+/root/1xiu/github2/bailingOCR2.0/include/head.h
 math.h
 -
 vector
 -
 
-/root/1xiu/bailingOCR2.0/include/LinkCandidateUtil.h
+/root/1xiu/github2/bailingOCR2.0/include/LinkCandidateUtil.h
 iostream
 -
 
-/root/1xiu/bailingOCR2.0/include/MSERProcess.h
+/root/1xiu/github2/bailingOCR2.0/include/MSERProcess.h
 head.h
-/root/1xiu/bailingOCR2.0/include/head.h
+/root/1xiu/github2/bailingOCR2.0/include/head.h
 DealCorrect.h
-/root/1xiu/bailingOCR2.0/include/DealCorrect.h
+/root/1xiu/github2/bailingOCR2.0/include/DealCorrect.h
 GetCandidate.h
-/root/1xiu/bailingOCR2.0/include/GetCandidate.h
+/root/1xiu/github2/bailingOCR2.0/include/GetCandidate.h
 LinkCandidate.h
-/root/1xiu/bailingOCR2.0/include/LinkCandidate.h
+/root/1xiu/github2/bailingOCR2.0/include/LinkCandidate.h
 TextRecognition.h
-/root/1xiu/bailingOCR2.0/include/TextRecognition.h
+/root/1xiu/github2/bailingOCR2.0/include/TextRecognition.h
 stdio.h
 -
 stdlib.h
@@ -118,25 +118,25 @@ stdlib.h
 string.h
 -
 
-/root/1xiu/bailingOCR2.0/include/TextRecognition.h
+/root/1xiu/github2/bailingOCR2.0/include/TextRecognition.h
 tesseract/baseapi.h
-/root/1xiu/bailingOCR2.0/include/tesseract/baseapi.h
+/root/1xiu/github2/bailingOCR2.0/include/tesseract/baseapi.h
 head.h
-/root/1xiu/bailingOCR2.0/include/head.h
+/root/1xiu/github2/bailingOCR2.0/include/head.h
 string
 -
 
-/root/1xiu/bailingOCR2.0/include/head.h
+/root/1xiu/github2/bailingOCR2.0/include/head.h
 opencv2/opencv.hpp
-/root/1xiu/bailingOCR2.0/include/opencv2/opencv.hpp
+/root/1xiu/github2/bailingOCR2.0/include/opencv2/opencv.hpp
 opencv2/highgui/highgui.hpp
-/root/1xiu/bailingOCR2.0/include/opencv2/highgui/highgui.hpp
+/root/1xiu/github2/bailingOCR2.0/include/opencv2/highgui/highgui.hpp
 opencv2/features2d/features2d.hpp
-/root/1xiu/bailingOCR2.0/include/opencv2/features2d/features2d.hpp
+/root/1xiu/github2/bailingOCR2.0/include/opencv2/features2d/features2d.hpp
 opencv2/imgproc/imgproc.hpp
-/root/1xiu/bailingOCR2.0/include/opencv2/imgproc/imgproc.hpp
+/root/1xiu/github2/bailingOCR2.0/include/opencv2/imgproc/imgproc.hpp
 opencv2/objdetect/objdetect.hpp
-/root/1xiu/bailingOCR2.0/include/opencv2/objdetect/objdetect.hpp
+/root/1xiu/github2/bailingOCR2.0/include/opencv2/objdetect/objdetect.hpp
 iostream
 -
 vector
@@ -148,47 +148,51 @@ string
 sstream
 -
 
-/root/1xiu/bailingOCR2.0/src/BailingJni.cpp
+/root/1xiu/github2/bailingOCR2.0/src/BailingJni.cpp
 ../include/BailingJni.h
-/root/1xiu/bailingOCR2.0/include/BailingJni.h
+/root/1xiu/github2/bailingOCR2.0/include/BailingJni.h
 iostream
 -
 
-/root/1xiu/bailingOCR2.0/src/DealCorrect.cpp
+/root/1xiu/github2/bailingOCR2.0/src/DealCorrect.cpp
 ../include/DealCorrect.h
-/root/1xiu/bailingOCR2.0/include/DealCorrect.h
+/root/1xiu/github2/bailingOCR2.0/include/DealCorrect.h
 
-/root/1xiu/bailingOCR2.0/src/GetCandidate.cpp
-../include/GetCandidate.h
-/root/1xiu/bailingOCR2.0/include/GetCandidate.h
-stdio.h
--
-
-/root/1xiu/bailingOCR2.0/src/LinkCandidate.cpp
-LinkCandidate.h
-/root/1xiu/bailingOCR2.0/src/LinkCandidate.h
-stdio.h
--
-
-/root/1xiu/bailingOCR2.0/src/LinkCandidateUtil.cpp
-LinkCandidateUtil.h
-/root/1xiu/bailingOCR2.0/src/LinkCandidateUtil.h
-
-/root/1xiu/bailingOCR2.0/src/MSERProcess.cpp
+/root/1xiu/github2/bailingOCR2.0/src/GetCandidate.cpp
 ../include/MSERProcess.h
-/root/1xiu/bailingOCR2.0/include/MSERProcess.h
+/root/1xiu/github2/bailingOCR2.0/include/MSERProcess.h
+../include/GetCandidate.h
+/root/1xiu/github2/bailingOCR2.0/include/GetCandidate.h
+stdio.h
+-
 
-/root/1xiu/bailingOCR2.0/src/TextRecognition.cpp
+/root/1xiu/github2/bailingOCR2.0/src/LinkCandidate.cpp
+LinkCandidate.h
+/root/1xiu/github2/bailingOCR2.0/src/LinkCandidate.h
+stdio.h
+-
+
+/root/1xiu/github2/bailingOCR2.0/src/LinkCandidateUtil.cpp
+LinkCandidateUtil.h
+/root/1xiu/github2/bailingOCR2.0/src/LinkCandidateUtil.h
+
+/root/1xiu/github2/bailingOCR2.0/src/MSERProcess.cpp
+../include/MSERProcess.h
+/root/1xiu/github2/bailingOCR2.0/include/MSERProcess.h
+stdio.h
+-
+
+/root/1xiu/github2/bailingOCR2.0/src/TextRecognition.cpp
 TextRecognition.h
-/root/1xiu/bailingOCR2.0/src/TextRecognition.h
+/root/1xiu/github2/bailingOCR2.0/src/TextRecognition.h
 time.h
 -
 
-/root/1xiu/bailingOCR2.0/src/main.cpp
+/root/1xiu/github2/bailingOCR2.0/src/main.cpp
 ../include/head.h
-/root/1xiu/bailingOCR2.0/include/head.h
+/root/1xiu/github2/bailingOCR2.0/include/head.h
 ../include/MSERProcess.h
-/root/1xiu/bailingOCR2.0/include/MSERProcess.h
+/root/1xiu/github2/bailingOCR2.0/include/MSERProcess.h
 iostream
 -
 string

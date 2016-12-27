@@ -36,8 +36,8 @@ int main(int argc, char* argv[])
 	   char*res1 = mp.doGetTxt( img);
 	   printf("res=%s\n",res1);
 
-	   char* res2 = p->doGetTxt( img);
-	   printf("res=%s\n",res2);
+	   //char* res2 = p->doGetTxt( img);
+	   //printf("res=%s\n",res2);
 	}
 
 	   delete p;

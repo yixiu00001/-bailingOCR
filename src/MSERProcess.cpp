@@ -1,4 +1,24 @@
+/*=============================================================================
+#
+# Author: yixiu - yixiu@inspur.com
+#
+# Technique Research Centre
+#
+# Last modified: 2016-11-01 10:27
+#
+# Filename: MSERProcess.cpp
+#
+# Description:提供图像识别的接口，接口内容包括：
+#（1）图像预处理；
+#（2）图像调用MSER检测
+#（3）图像小区域链接组合
+#（4）组合图像拼接，二值化，调用tesseract识别
+#
+=============================================================================*/
 #include "../include/MSERProcess.h"
+#include<stdio.h>
+//为了兼容java使用jni方法调用，将函数中用到的变量放在了全局位置
+//如果放在类头文件的成员变量位置，java调用会出core,预估java和c++的内存分配方式不一样
 	vector<Candidate> candidateStore;
 	vector<Candidate>ccStore;
 	vector< vector<cv::Point2i> > strVectorStore; 
@@ -15,7 +35,7 @@ MSERProcess::MSERProcess(char*path)
 MSERProcess::~MSERProcess()
 {
 }
-
+//证照识别的主函数，输入原始图片，输出识别的txt文本
 char* MSERProcess::doGetTxt( cv::Mat src)
 {
 	//printf("step1 dealCorrect\n");
@@ -31,8 +51,14 @@ char* MSERProcess::doGetTxt( cv::Mat src)
 
 	//step3, link candidates， 版面分割
 	//printf("step3 linkCandidate\n");
+
+	int max_y;
+	int min_y;
+	int max_x;
+	int min_x;
 	vector<Rect> cgts;
-	cgts = linkCandidate.run(candidateStore);
+	cgts = linkCandidate.run(candidateStore, max_y, min_y, max_x, min_x);
+	//printf("max_y=%d min_y = %d max_x =%d min_x=%d\n", max_y, min_y, max_x, min_x);
 
 	//step4, recognized识别
 	//printf("get target domain\n");
@@ -46,6 +72,18 @@ char* MSERProcess::doGetTxt( cv::Mat src)
 	Mat plotTmp;
 	plotTmp.create(src.size(), CV_8UC1);
 	plotTmp = Scalar::all(255);
+
+
+	//get the main domain, top/bottom/left/right
+	int top_y = (max_y - min_y)*0+min_y;
+	int bottom_y = max_y - (max_y -min_y)*0.05;
+	int left_x = min_x;
+	int right_x = max_x ;
+
+	//int top_y = (max_y - min_y)*0.25+min_y;
+	//int bottom_y = max_y - (max_y -min_y)*0.25;
+	//int left_x = (max_x - min_x)*0.12 + min_x;
+	//int right_x = max_x - (max_x - min_x)*0.12;
 
 	for(unsigned int i = 0; i < cgts.size(); i++)
 	{
@@ -65,16 +103,25 @@ char* MSERProcess::doGetTxt( cv::Mat src)
 			for(int i = r.tl().y; i < r.br().y; i++){
 				for (int j = r.tl().x; j < r.br().x; j++){
 					plot.at<uchar>(i, j) = image_roi.at<uchar>(i - r.tl().y, j - r.tl().x);
+					//copy the selected domain to a new image
+					if(r.y>=top_y && r.y<=bottom_y && r.x>=left_x && r.x <= right_x)
+					{
+						plotTmp.at<uchar>(i, j) = image_roi.at<uchar>(i - r.tl().y, j - r.tl().x);
+
+					}
 					}
 				}
 			}
 	}
 
 	//showWindowImg("link ", tmpImg2);
-	//imshow("link", tmpImg2);
-	//imshow("plot", plot);
+	//imshow("link", plot);
+	//imwrite("plot2.jpg", tmpImg2);
+	//imwrite("plot.jpg", plotTmp);
 	//waitKey(0);
+	//compute the text of the input image base tessract
 	char* outStr = textRecognition.run(plot);
+	//deal the space
 	char* outStrDst = dealSpace(outStr);
 	return outStrDst;
 	//return "target test";
@@ -113,11 +160,16 @@ char* MSERProcess::dealSpace(char* source)
 	}
 	while(*p!='\0')
 	{
+		if(*p=='\n' && *(p-1)=='\n')
+		{
+			p++;
+		}
 		if(*p!=' ')
 		{
 			source[j++] = *p;
 			p++;
 		}
+		
 		while(*p==' ')
 		{
 			p++;

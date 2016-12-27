@@ -6,7 +6,7 @@ void TextRecognition::Init(int flag, char *lang, PageSegMode mode, char*path)
 {
 /*
 	char current_absolute_path[MAX_SIZE];
-	//»ñÈ¡µ±Ç°Ä¿Â¼¾ø¶ÔÂ·¾¶
+	//??È¡??Ç°Ä¿Â¼????Â·??
 	if (NULL == realpath("./", current_absolute_path))
 	{
 		printf("***Error***\n");
@@ -26,7 +26,7 @@ void TextRecognition::Init(int flag, char *lang, PageSegMode mode, char*path)
 	tess.ReadConfigFile(current_absolute_path1);
 	//tess.SetVariable("language_model_penalty_non_dict_word", "0.15");
 	//tess.SetVariable("language_model_penalty_non_freq_dict_word", "0.1");
-	/*°²ÃÍ×¢ÊÍ
+	/*????×¢??
 	  tess.SetVariable("chop_enable", "T");
 	  tess.SetVariable("use_new_state_cost", "F");
 	  tess.SetVariable("segment_segcost_rating", "F");
@@ -51,16 +51,16 @@ void TextRecognition::Init(int flag, char *lang, PageSegMode mode, char*path)
 	{
 		case 0:
 			break;
-		case 1:  //ĞÔ±ğÃû×å chi_sim
-			tess.SetVariable("tessedit_char_blacklist","ĞÔ±ğÅ®ÄĞÃñ×åºº");//×³Âú»ØÃçÎ¬Îá¶ûÍÁ¼ÒÒÍÃÉ¹Å²Ø²¼ÒÀ¶±Ñş³¯ÏÊ°×¹şÄáÀè´öî´ÀüËÛØîÀĞ¶«Ïç¸ßÉ½À­ìïË®ØôÄÉÎ÷Ç¼ØïÎı²®¿Â¿Ë×Î´ïÎÓ¾°ÆÄÃ«ÄÏÈöÀÊËş¼ª¿Ë°¢²ıÆÕÃ×¶õÎÂÅ­¾©»ùÅµµÂ°º±£°²¶íÂŞË¹Ô£¹ÌÎÚ×Î±ğÃÅ°Í¶õÂ×´º¶ÀÁúËşºÕÕÜçó");
+		case 1:  //?Ô±????? chi_sim
+			tess.SetVariable("tessedit_char_blacklist","?Ô±?Å®?????åºº");//×³??????Î¬?????Á¼????É¹Å²Ø²??À¶??????Ê°×¹????????????????Ğ¶?????É½À­??Ë®??????Ç¼???????Â¿??Î´??Ó¾???Ã«???????????Ë°??????×¶???Å­????Åµ?Â°?????????Ë¹Ô£?????Î±??Å°Í¶??×´?????????????");
 			break;
-		case 2:  //ÉúÈÕ  eng
+		case 2:  //????  eng
 			tess.SetVariable("tessedit_char_whitelist","0123456789X");
 			break;
 		case 3:  //×¡Ö· chi_sim+eng
-			tess.SetVariable("tessedit_char_blacklist", "¡¾¡¿¡££¬¡¢£»£º£¿£¡¡¤¡®¡¯¡°¡±¡©¡«£¢£§£à¡¨¡¬¡²¡³¡´¡µ¡¶¡·¡¸¡¹¡º¡»£®¡¼¡½£¨£©£Û£İ£û£ı¡ì¡í¡î¡ï¡ğ¡ñ¡ò¡ó¡ô¡õ¡æ¡ë€¡ã¡è¡ş¡ı¡û¡ü¡ú¡ù¡ø¡÷¡ö£££¦£À£Ü¦ä£ß£ş¨D¡á¡â/+-=*?''""|[]{}()^&%$#@!QWERTYUIOPLKJHGFDSAZCVBNMqwertyuioplkjhgfdsazcvbnm");
+			tess.SetVariable("tessedit_char_blacklist", "?????????????????????????????????????à¡¨?????????????????????????????????Û£İ£??????????????????????????ë€¡????????????????????ö£££??À£Ü¦??ß£??D????/+-=*?''""|[]{}()^&%$#@!QWERTYUIOPLKJHGFDSAZCVBNMqwertyuioplkjhgfdsazcvbnm");
 			break;
-		case 4: //Éí·İÖ¤ºÅÂë  chi_sim+eng
+		case 4: //????Ö¤????  chi_sim+eng
 			//tess.SetVariable("textord_heavy_nr", "1"); 
 			tess.SetVariable("tessedit_char_blacklist", "/+-=*?''""|[]{}()^&%$#@!QWERTYUIOPLKJHGFDSAZCVBNMqwertyuioplkjhgfdsazcvbnm");
 		default:
@@ -72,15 +72,15 @@ void TextRecognition::Init(int flag, char *lang, PageSegMode mode, char*path)
 
 char* TextRecognition::run(Mat &src)
 {
-	clock_t start, finish;
-	double duration;
+	//clock_t start, finish;
+	//double duration;
 	tess.SetImage((uchar*)src.data, src.cols, src.rows, 1, src.cols);
-	cout<<"begin tess get"<<endl;
-	start = clock();
+	//cout<<"begin tess get"<<endl;
+	//start = clock();
 	char* out = tess.GetUTF8Text();	
-	finish = clock();
-	duration = (double)(finish - start) / CLOCKS_PER_SEC;
-	cout<<"end tess get:"<<duration<<endl;
+	//finish = clock();
+	//duration = (double)(finish - start) / CLOCKS_PER_SEC;
+	//cout<<"[Time cost]:"<<duration<<endl;
 	//cout<<endl<<out<<endl;
 
 	return out;

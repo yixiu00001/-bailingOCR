@@ -35,10 +35,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/1xiu/bailingOCR2.0
+CMAKE_SOURCE_DIR = /root/1xiu/github2/bailingOCR2.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/1xiu/bailingOCR2.0/linux
+CMAKE_BINARY_DIR = /root/1xiu/github2/bailingOCR2.0/linux
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bailing.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/bailing.dir/flags.make
 
 CMakeFiles/bailing.dir/src/TextRecognition.cpp.o: CMakeFiles/bailing.dir/flags.make
 CMakeFiles/bailing.dir/src/TextRecognition.cpp.o: ../src/TextRecognition.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bailing.dir/src/TextRecognition.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/TextRecognition.cpp.o -c /root/1xiu/bailingOCR2.0/src/TextRecognition.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/TextRecognition.cpp.o -c /root/1xiu/github2/bailingOCR2.0/src/TextRecognition.cpp
 
 CMakeFiles/bailing.dir/src/TextRecognition.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bailing.dir/src/TextRecognition.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/bailingOCR2.0/src/TextRecognition.cpp > CMakeFiles/bailing.dir/src/TextRecognition.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/github2/bailingOCR2.0/src/TextRecognition.cpp > CMakeFiles/bailing.dir/src/TextRecognition.cpp.i
 
 CMakeFiles/bailing.dir/src/TextRecognition.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bailing.dir/src/TextRecognition.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/bailingOCR2.0/src/TextRecognition.cpp -o CMakeFiles/bailing.dir/src/TextRecognition.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/github2/bailingOCR2.0/src/TextRecognition.cpp -o CMakeFiles/bailing.dir/src/TextRecognition.cpp.s
 
 CMakeFiles/bailing.dir/src/TextRecognition.cpp.o.requires:
 .PHONY : CMakeFiles/bailing.dir/src/TextRecognition.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/bailing.dir/src/TextRecognition.cpp.o.provides.build: CMakeFiles/bail
 
 CMakeFiles/bailing.dir/src/BailingJni.cpp.o: CMakeFiles/bailing.dir/flags.make
 CMakeFiles/bailing.dir/src/BailingJni.cpp.o: ../src/BailingJni.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bailing.dir/src/BailingJni.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/BailingJni.cpp.o -c /root/1xiu/bailingOCR2.0/src/BailingJni.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/BailingJni.cpp.o -c /root/1xiu/github2/bailingOCR2.0/src/BailingJni.cpp
 
 CMakeFiles/bailing.dir/src/BailingJni.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bailing.dir/src/BailingJni.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/bailingOCR2.0/src/BailingJni.cpp > CMakeFiles/bailing.dir/src/BailingJni.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/github2/bailingOCR2.0/src/BailingJni.cpp > CMakeFiles/bailing.dir/src/BailingJni.cpp.i
 
 CMakeFiles/bailing.dir/src/BailingJni.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bailing.dir/src/BailingJni.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/bailingOCR2.0/src/BailingJni.cpp -o CMakeFiles/bailing.dir/src/BailingJni.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/github2/bailingOCR2.0/src/BailingJni.cpp -o CMakeFiles/bailing.dir/src/BailingJni.cpp.s
 
 CMakeFiles/bailing.dir/src/BailingJni.cpp.o.requires:
 .PHONY : CMakeFiles/bailing.dir/src/BailingJni.cpp.o.requires
@@ -97,17 +97,17 @@ CMakeFiles/bailing.dir/src/BailingJni.cpp.o.provides.build: CMakeFiles/bailing.d
 
 CMakeFiles/bailing.dir/src/DealCorrect.cpp.o: CMakeFiles/bailing.dir/flags.make
 CMakeFiles/bailing.dir/src/DealCorrect.cpp.o: ../src/DealCorrect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bailing.dir/src/DealCorrect.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/DealCorrect.cpp.o -c /root/1xiu/bailingOCR2.0/src/DealCorrect.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/DealCorrect.cpp.o -c /root/1xiu/github2/bailingOCR2.0/src/DealCorrect.cpp
 
 CMakeFiles/bailing.dir/src/DealCorrect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bailing.dir/src/DealCorrect.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/bailingOCR2.0/src/DealCorrect.cpp > CMakeFiles/bailing.dir/src/DealCorrect.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/github2/bailingOCR2.0/src/DealCorrect.cpp > CMakeFiles/bailing.dir/src/DealCorrect.cpp.i
 
 CMakeFiles/bailing.dir/src/DealCorrect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bailing.dir/src/DealCorrect.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/bailingOCR2.0/src/DealCorrect.cpp -o CMakeFiles/bailing.dir/src/DealCorrect.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/github2/bailingOCR2.0/src/DealCorrect.cpp -o CMakeFiles/bailing.dir/src/DealCorrect.cpp.s
 
 CMakeFiles/bailing.dir/src/DealCorrect.cpp.o.requires:
 .PHONY : CMakeFiles/bailing.dir/src/DealCorrect.cpp.o.requires
@@ -120,17 +120,17 @@ CMakeFiles/bailing.dir/src/DealCorrect.cpp.o.provides.build: CMakeFiles/bailing.
 
 CMakeFiles/bailing.dir/src/LinkCandidate.cpp.o: CMakeFiles/bailing.dir/flags.make
 CMakeFiles/bailing.dir/src/LinkCandidate.cpp.o: ../src/LinkCandidate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bailing.dir/src/LinkCandidate.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/LinkCandidate.cpp.o -c /root/1xiu/bailingOCR2.0/src/LinkCandidate.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/LinkCandidate.cpp.o -c /root/1xiu/github2/bailingOCR2.0/src/LinkCandidate.cpp
 
 CMakeFiles/bailing.dir/src/LinkCandidate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bailing.dir/src/LinkCandidate.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/bailingOCR2.0/src/LinkCandidate.cpp > CMakeFiles/bailing.dir/src/LinkCandidate.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/github2/bailingOCR2.0/src/LinkCandidate.cpp > CMakeFiles/bailing.dir/src/LinkCandidate.cpp.i
 
 CMakeFiles/bailing.dir/src/LinkCandidate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bailing.dir/src/LinkCandidate.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/bailingOCR2.0/src/LinkCandidate.cpp -o CMakeFiles/bailing.dir/src/LinkCandidate.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/github2/bailingOCR2.0/src/LinkCandidate.cpp -o CMakeFiles/bailing.dir/src/LinkCandidate.cpp.s
 
 CMakeFiles/bailing.dir/src/LinkCandidate.cpp.o.requires:
 .PHONY : CMakeFiles/bailing.dir/src/LinkCandidate.cpp.o.requires
@@ -143,17 +143,17 @@ CMakeFiles/bailing.dir/src/LinkCandidate.cpp.o.provides.build: CMakeFiles/bailin
 
 CMakeFiles/bailing.dir/src/MSERProcess.cpp.o: CMakeFiles/bailing.dir/flags.make
 CMakeFiles/bailing.dir/src/MSERProcess.cpp.o: ../src/MSERProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bailing.dir/src/MSERProcess.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/MSERProcess.cpp.o -c /root/1xiu/bailingOCR2.0/src/MSERProcess.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/MSERProcess.cpp.o -c /root/1xiu/github2/bailingOCR2.0/src/MSERProcess.cpp
 
 CMakeFiles/bailing.dir/src/MSERProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bailing.dir/src/MSERProcess.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/bailingOCR2.0/src/MSERProcess.cpp > CMakeFiles/bailing.dir/src/MSERProcess.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/github2/bailingOCR2.0/src/MSERProcess.cpp > CMakeFiles/bailing.dir/src/MSERProcess.cpp.i
 
 CMakeFiles/bailing.dir/src/MSERProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bailing.dir/src/MSERProcess.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/bailingOCR2.0/src/MSERProcess.cpp -o CMakeFiles/bailing.dir/src/MSERProcess.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/github2/bailingOCR2.0/src/MSERProcess.cpp -o CMakeFiles/bailing.dir/src/MSERProcess.cpp.s
 
 CMakeFiles/bailing.dir/src/MSERProcess.cpp.o.requires:
 .PHONY : CMakeFiles/bailing.dir/src/MSERProcess.cpp.o.requires
@@ -166,17 +166,17 @@ CMakeFiles/bailing.dir/src/MSERProcess.cpp.o.provides.build: CMakeFiles/bailing.
 
 CMakeFiles/bailing.dir/src/main.cpp.o: CMakeFiles/bailing.dir/flags.make
 CMakeFiles/bailing.dir/src/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bailing.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/main.cpp.o -c /root/1xiu/bailingOCR2.0/src/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/main.cpp.o -c /root/1xiu/github2/bailingOCR2.0/src/main.cpp
 
 CMakeFiles/bailing.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bailing.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/bailingOCR2.0/src/main.cpp > CMakeFiles/bailing.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/github2/bailingOCR2.0/src/main.cpp > CMakeFiles/bailing.dir/src/main.cpp.i
 
 CMakeFiles/bailing.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bailing.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/bailingOCR2.0/src/main.cpp -o CMakeFiles/bailing.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/github2/bailingOCR2.0/src/main.cpp -o CMakeFiles/bailing.dir/src/main.cpp.s
 
 CMakeFiles/bailing.dir/src/main.cpp.o.requires:
 .PHONY : CMakeFiles/bailing.dir/src/main.cpp.o.requires
@@ -189,17 +189,17 @@ CMakeFiles/bailing.dir/src/main.cpp.o.provides.build: CMakeFiles/bailing.dir/src
 
 CMakeFiles/bailing.dir/src/GetCandidate.cpp.o: CMakeFiles/bailing.dir/flags.make
 CMakeFiles/bailing.dir/src/GetCandidate.cpp.o: ../src/GetCandidate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bailing.dir/src/GetCandidate.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/GetCandidate.cpp.o -c /root/1xiu/bailingOCR2.0/src/GetCandidate.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/GetCandidate.cpp.o -c /root/1xiu/github2/bailingOCR2.0/src/GetCandidate.cpp
 
 CMakeFiles/bailing.dir/src/GetCandidate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bailing.dir/src/GetCandidate.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/bailingOCR2.0/src/GetCandidate.cpp > CMakeFiles/bailing.dir/src/GetCandidate.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/github2/bailingOCR2.0/src/GetCandidate.cpp > CMakeFiles/bailing.dir/src/GetCandidate.cpp.i
 
 CMakeFiles/bailing.dir/src/GetCandidate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bailing.dir/src/GetCandidate.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/bailingOCR2.0/src/GetCandidate.cpp -o CMakeFiles/bailing.dir/src/GetCandidate.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/github2/bailingOCR2.0/src/GetCandidate.cpp -o CMakeFiles/bailing.dir/src/GetCandidate.cpp.s
 
 CMakeFiles/bailing.dir/src/GetCandidate.cpp.o.requires:
 .PHONY : CMakeFiles/bailing.dir/src/GetCandidate.cpp.o.requires
@@ -212,17 +212,17 @@ CMakeFiles/bailing.dir/src/GetCandidate.cpp.o.provides.build: CMakeFiles/bailing
 
 CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.o: CMakeFiles/bailing.dir/flags.make
 CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.o: ../src/LinkCandidateUtil.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.o -c /root/1xiu/bailingOCR2.0/src/LinkCandidateUtil.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.o -c /root/1xiu/github2/bailingOCR2.0/src/LinkCandidateUtil.cpp
 
 CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/bailingOCR2.0/src/LinkCandidateUtil.cpp > CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/1xiu/github2/bailingOCR2.0/src/LinkCandidateUtil.cpp > CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.i
 
 CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/bailingOCR2.0/src/LinkCandidateUtil.cpp -o CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/1xiu/github2/bailingOCR2.0/src/LinkCandidateUtil.cpp -o CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.s
 
 CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.o.requires:
 .PHONY : CMakeFiles/bailing.dir/src/LinkCandidateUtil.cpp.o.requires
@@ -298,6 +298,6 @@ CMakeFiles/bailing.dir/clean:
 .PHONY : CMakeFiles/bailing.dir/clean
 
 CMakeFiles/bailing.dir/depend:
-	cd /root/1xiu/bailingOCR2.0/linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/1xiu/bailingOCR2.0 /root/1xiu/bailingOCR2.0 /root/1xiu/bailingOCR2.0/linux /root/1xiu/bailingOCR2.0/linux /root/1xiu/bailingOCR2.0/linux/CMakeFiles/bailing.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/1xiu/github2/bailingOCR2.0/linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/1xiu/github2/bailingOCR2.0 /root/1xiu/github2/bailingOCR2.0 /root/1xiu/github2/bailingOCR2.0/linux /root/1xiu/github2/bailingOCR2.0/linux /root/1xiu/github2/bailingOCR2.0/linux/CMakeFiles/bailing.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bailing.dir/depend
 

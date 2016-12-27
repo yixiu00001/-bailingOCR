@@ -94,7 +94,12 @@ CMakeFiles/BailingOCRJni.dir/src/DealCorrect.cpp.o: /usr/local/include/opencv2/v
 CMakeFiles/BailingOCRJni.dir/src/DealCorrect.cpp.o: /usr/local/include/opencv2/video/video.hpp
 
 CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../include/Candidate.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../include/DealCorrect.h
 CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../include/GetCandidate.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../include/LinkCandidate.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../include/LinkCandidateUtil.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../include/MSERProcess.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../include/TextRecognition.h
 CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../include/head.h
 CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: ../src/GetCandidate.cpp
 CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/opencv2/calib3d/calib3d.hpp
@@ -125,6 +130,25 @@ CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/opencv2/
 CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/opencv2/video/background_segm.hpp
 CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/opencv2/video/tracking.hpp
 CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/opencv2/video/video.hpp
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/apitypes.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/baseapi.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/errcode.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/genericvector.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/helpers.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/host.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/ltrresultiterator.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/memry.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/ndminx.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/pageiterator.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/platform.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/publictypes.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/resultiterator.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/strngs.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/tesscallback.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/thresholder.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/unichar.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/unicharmap.h
+CMakeFiles/BailingOCRJni.dir/src/GetCandidate.cpp.o: /usr/local/include/tesseract/unicharset.h
 
 CMakeFiles/BailingOCRJni.dir/src/LinkCandidate.cpp.o: ../include/Candidate.h
 CMakeFiles/BailingOCRJni.dir/src/LinkCandidate.cpp.o: ../include/LinkCandidate.h

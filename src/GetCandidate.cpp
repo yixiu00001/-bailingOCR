@@ -1,3 +1,19 @@
+/*=============================================================================
+#
+# Author: yixiu - yixiu@inspur.com
+#
+# Technique Research Centre
+#
+# Last modified: 2016-12-26 10:27
+#
+# Filename: GetCandidate.cpp
+#
+# Description:提供图像特征提取接口，接口内容包括：
+#（1）图像预处理，灰度化；
+#（2）图像提取MSER特征
+#（3）图像MSER特征过滤
+=============================================================================*/
+#include "../include/MSERProcess.h"
 #include "../include/GetCandidate.h"
 #include <stdio.h>
 GetCandidate::GetCandidate()
@@ -5,7 +21,7 @@ GetCandidate::GetCandidate()
 
 GetCandidate::~GetCandidate()
 {}
-
+//主函数，提取MSER特征并过滤
 void GetCandidate::run(Mat &Image,Mat &oriBgrImage_8UC3,Mat &gray_source_image,vector< vector<cv::Point2i> > &strVectorStore,vector<Candidate> &ccStore, vector<Candidate>&candidateStore)
 {
 	//printf("get GetCandidate rows=%d cols=%d\n", Image.rows, Image.cols);
@@ -16,7 +32,7 @@ void GetCandidate::run(Mat &Image,Mat &oriBgrImage_8UC3,Mat &gray_source_image,v
 	Filter(oriBgrImage_8UC3, gray_source_image,strVectorStore, ccStore, candidateStore);
 
 }
-
+//调用opencv的接口计算MSER候选文字区域``;
 void GetCandidate::featureExtract(Mat &oriBgrImage_8UC3,Mat &gray_source_image,vector< vector<cv::Point2i> > &strVectorStore)
 {
 	strVectorStore.clear();
@@ -85,6 +101,7 @@ void GetCandidate::ExtractCCfeatures(Mat &oriBgrImage_8UC3,Mat &gray_source_imag
 		ccStore.push_back(cd);
 	}
 }
+//过滤太小的块
 	void GetCandidate::Filter(Mat &oriBgrImage_8UC3,Mat &gray_source_image,vector< vector<cv::Point2i> > &strVectorStore,vector<Candidate> &ccStore,vector<Candidate> &candidateStore)
 {
 	ExtractCCfeatures(oriBgrImage_8UC3, gray_source_image, strVectorStore, ccStore);
@@ -111,7 +128,9 @@ void GetCandidate::getStrokeWidth(vector<cv::Point2i>& component, Candidate& cad
 {
 	double ccisize = component.size();
 	double NumWidth = 0, avgstrokewidth = 0, variancestrokewidth = 0; 
-	Mat StrokeImage = gray_source_image;
+	//Mat StrokeImage = gray_source_image;
+	Mat StrokeImage  = cv::Mat::zeros(gray_source_image.rows,gray_source_image.cols,CV_32FC1);
+
 	for(int i = 0; i< ccisize;i++)
 	{
 		int iindex = component[i].y,jindex = component[i].x;
